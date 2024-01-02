@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EduNine | Admin Dashboard</title>
+    <link rel="icon" type="img" href="img/edu9 logo.png">
+    <link rel="stylesheet" href="CSS/adminDashboard.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+
+    <!-- Popup Form -->
+    <div class="addData">
+        <div id="addFormUser">
+            <h1 class="titleform"> User </h1>
+            <div id="daftar" name="daftar">
+                <label for="Name">Username:</label>
+                <input type="text" id="Username" name="Username" placeholder="Inputkan Username" required>
+                
+                <label for="Name">Email:</label>
+                <input type="email" id="Email" name="Email" placeholder="Inputkan Email" required>
+    
+                <label for="Name">Password:</label>
+                <input type="password" id="Password" name="Password" placeholder="Inputkan Password" required>
+    
+                <input type="submit" value="SEND" class="sendForm">
+                <a href="#" class="cancelForm">CANCEL</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Data -->
+    <div class="editData">
+        <div id="editFormUser">
+            <h1 class="titleform"> User </h1>
+            <div id="edit" name="edit">
+                <label for="Name">Username:</label>
+                <input type="text" id="editUsername" name="editUsername" placeholder="Inputkan Username" required>
+                
+                <label for="Name">Email:</label>
+                <input type="email" id="editEmail" name="editEmail" placeholder="Inputkan Email" required>
+    
+                <label for="Name">Password:</label>
+                <input type="password" id="editPassword" name="editPassword" placeholder="Inputkan Password" required>
+    
+                <input type="submit" value="SEND" class="sendEdit">
+                <a href="#" class="cancelEdit">CANCEL</a>
+            </div>
+        </div>
+    </div>
+
+  <div class="container">
+
+    <!-- Side Navbar -->
+    <nav>
+        <ul>
+            <li class="dashboard">
+                <img src="img/logo.png" alt="EduNine">
+                <a href="index.html">DASHBOARD</a>
+            </li>
+            <li>
+                <i class="fas fa-home"></i>
+                <a href="adminDashboard.html">Home</a>
+            </li>
+            <li>
+                <i class="fas fa-user"></i>
+                <a href="datauser.html">Data User</a>
+            </li>
+            <li>
+                <i class="fas fa-database"></i>
+                <a href="datapeserta.html">Data Peserta</a>
+            </li>
+            <li>
+                <i class="fas fa-graduation-cap"></i>
+                <a href="datamateri.html">Data Materi</a>
+            </li>
+            <li class="logout"> 
+                <i class="fas fa-sign-out-alt"></i>
+                <a href="index.html">Log out</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <!-- Main Section -->
+    <section class="main">
+        <div class="main-banner-data">
+            <div class="card-data">
+                <i class="fas fa-user"></i>
+                <h1>Data User</h1>
+            </div>
+        </div>
+  
+        <section class="table-container">
+            <div class="table-btn">
+                <div class="left-btn">
+                    <button class="fa fa-plus add">Add</button>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="boxtb">
+            <div class="table-box">
+                <table> 
+                    <thead class="headTable">
+                        <tr>
+                            <th>No</th>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Password</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="userTable">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Javascript -->
+    <script src="./JS/dataUser.js"></script>
+</div>
+</body>
+</html>

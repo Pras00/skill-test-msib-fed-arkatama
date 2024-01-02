@@ -1,0 +1,139 @@
+* {
+    margin: 0x;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #9593FF ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: #e9e9f7 ;
+    margin: auto;
+    padding: 40px 60px;
+    border-radius: 20px;
+}
+
+h1 {    
+    margin: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#daftar {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px;
+}
+
+input , select , a{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 10px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+}
+
+input[type=submit],
+#daftar a {
+    background-color: #8E8AD7 ;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+input[type=submit]:hover,
+#daftar a:hover {
+    background-color: #352F44;
+}
+
+.popup{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    background: white;
+    border-radius: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.open-popup{
+    visibility: visible;
+}
+
+
+.popup img{
+    width: 150px;
+    margin-top: 50px;
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup > a > button {
+    width: 100%;
+    margin: 20px 0px;
+    padding: 10px 0;
+    background: rgb(78, 78, 187);
+    color: #FFF;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.popup > a > button:hover{
+    background: #9593FF;
+}
+
+.backhome{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.backhome button{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #000000;
+    background: none;
+    border: none;
+}
+
+.backhome button:hover{
+    align-items: center;
+    color: #f58033;
+    transition: .5s;
+    background: none;
+}

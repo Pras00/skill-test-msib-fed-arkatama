@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>Capstone Project - Team E - Group 9</title>
+    <link rel="icon" type="img" href="img/edu9 logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="Logo">
+            <a href="index.html"><img src="img/logo.png" alt="EduNine"></a>
+        </div>
+        <div class="navItem">
+            <a href="index.html" class="itemMenu">Home</a>
+            <a href="course.html" class="itemMenu">Course</a>
+        </div>
+        <div class="itemLogin">
+            <a href="login.html">Log In</a>
+        </div>
+
+        <!-- Hamburger Button -->
+        <header>
+            <img src="img/Open.png" alt="Open" onclick="openNav()">
+            <div class="hamburgerBtn" id="sideNav">
+                <img src="img/Close.png" alt="Close" class="closeBtn" onclick="closeNav()">
+                <a href="index.html">Home</a>
+                <div></div>
+                <a href="course.html">Course</a>
+                <div></div>
+                <a href="aboutus.html">About Us</a>
+                <div></div>
+                <div class="hamburgerLogin">
+                    <a href="login.html">Log In</a>
+                </div>
+                <p>EduNine - Group 9</p>
+                <h5>RevoU - Balikpapan Section</h5>
+            </div>
+        </header>
+    </nav>
+
+
+    <!-- Main Section -->
+
+    <div class="mainImage">
+        <img src="./img/main-Image.png" alt="">
+    </div>
+
+    <section class="main">
+        <div class="titleCaption" data-aos="fade-right">
+            <h1>Free Online Course Now in your Hand</h1>
+            <p> Dapatkan skill secara fleksibel dari para mentor professional dan dapatkan sertifikat! </p>
+        </div>
+        <div class="test" data-aos="flip-up">
+            <p>Learn from the best of the best with EduNine  </p>
+            <div class="itemTest">
+                <a href="course.html">Join Now!</a>
+            </div>
+            <img src="./img/testIcon.png" alt="">
+        </div>    
+    </section>
+
+
+    <!-- Information Section -->
+
+    <section class="informationSection" data-aos="fade-up">
+        <h3>100K+ Students are</h3>
+        <h3>One Place</h3>
+        <p>Ayo bangun pekerjaan impianmu sekarang bersama ribuan peserta EduNine lainnya</p>
+        <a href="daftar.html">Daftar Sekarang</a>
+    </section>
+
+
+    <!-- Alumni Section -->
+    
+    <div class="alumniSection-img">
+        <img src="img/AlumniSection.png" alt="">
+    </div>
+
+    <section class="alumniSection">
+        <div class="alumniInformation">
+            <div class="alumniInformation-title" data-aos="fade-right">
+                <h1>Ini Kisah Alumni EduNine</h1>
+            </div>
+            <div class="profileInformation" data-aos="fade-left">
+                <div class="testimonials">
+                    <div class="alumniProfile">
+                        <img src="img/Alumni 1.png" alt="Avatar">
+                        <div class="alumniProfile-title">
+                            <h3>Dian Pratama</h3>
+                            <p>Freelancer</p>
+                        </div>
+                    </div>
+                    <div class="alumniExperience">
+                        <p>Gue freelancer, dulu cuman bisa desain tapi gak bisa ngoding. 
+                            Setelah nyoba online course di EduNine, ngebantu banget! 
+                            Sekarang gue udah bisa ngeluarin skill baru, dan klien-klien 
+                            puas banget sama kerjaan 😍</p>
+                    </div>
+                </div>
+                <div class="testimonials">
+                    <div class="alumniProfile">
+                        <img src="img/Alumni 2.png" alt="Avatar">
+                        <div class="alumniProfile-title">
+                            <h3>Satya Maulana</h3>
+                            <p>Back End Developer di BlueTech Labs</p>
+                        </div>
+                    </div>
+                    <div class="alumniExperience">
+                        <p>Setelah ambil kelas Back End Dev di EduNine, bener-bener 
+                            membantu saya banget dalam berbicara dengan lebih percaya 
+                            diri kepada tim teknis saya. Saya merasa lebih berdaya dalam 
+                            proyek dan memahami batasan teknologi yang di hadapi</p>
+                    </div>
+                </div>
+                <div class="testimonials">
+                    <div class="alumniProfile">
+                        <img src="img/Alumni 3.png" alt="Avatar">
+                        <div class="alumniProfile-title">
+                            <h3>Ahmad Rizal</h3>
+                            <p>Front End Developer di Crafters Inc.</p>
+                        </div>
+                    </div>
+                    <div class="alumniExperience">
+                        <p>Gue sih dulu gapaham coding, tapi setelah ikutin kursus di 
+                            EduNine, gue jadi bisa switch ke career yang lebih baik. 
+                            Sekarang bisa bikin website keren, dan yang lebih gila lagi, 
+                            gue diterima di perusahaan top buat jadi Front End Dev!</p>
+                    </div>
+                </div>
+                <div class="testimonials">
+                    <div class="alumniProfile">
+                        <img src="img/Alumni 4.png" alt="Avatar">
+                        <div class="alumniProfile-title">
+                            <h3>Putri Amelia</h3>
+                            <p>Data Analyst di Gojek</p>
+                        </div>
+                    </div>
+                    <div class="alumniExperience">
+                        <p>Selalu pengen jadi Data Analyst tapi bingung mulainya darimana, 
+                            tapi di EduNine helpful banget! Pemaparannya jelas, mentornya
+                            juga responsif, gratis juga yang penting haha! Makasih EduNine, 
+                            ga nyangka sih aku bisa kerja di Gojek sekarang ❤️‍🔥</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vector">
+                <img src="img/Plus.png" alt="plus" onclick="plusDivs(1)" class="plus" data-aos="flip-right">
+                <img src="img/Minus.png" alt="minus" onclick="plusDivs(-1)" class="minus" data-aos="flip-right">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Call-->
+    <div class="contact">
+        <a href="mailto:prasetiawahyu22@gmail.com.com?subject=Mail to Edunine" class="fa fa-wechat" ></a>
+        <a href="mailto:prasetiawahyu22@gmail.com.com?subject=Mail to Edunine" target="_blank">Contact Us</a>
+    </div>
+
+    <!-- Javascript -->
+    <script src="JS/index.js"></script>
+    <script src="JS/course.js"></script>
+
+    <!-- Javascript AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

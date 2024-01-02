@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/coursesection.css">
+    <title>Capstone Project - Team E - Group 9</title>
+    <link rel="icon" type="img" href="img/edu9 logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" >
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="Logo">
+            <a href="index.html"><img src="img/logo.png" alt="EduNine"></a>
+        </div>
+        <div class="navItem">
+            <a href="index.html" class="itemMenu">Home</a>
+            <a href="course.html" class="itemMenu">Course</a>
+            <a href="aboutus.html" class="itemMenu">About Us</a>
+        </div>
+        <div class="itemLogin">
+            <a href="login.html">Log In</a>
+        </div>
+
+        <!-- Hamburger Button -->
+        <header>
+            <img src="img/Open.png" alt="Open" onclick="openNav()">
+            <div class="hamburgerBtn" id="sideNav">
+                <img src="img/Close.png" alt="Close" class="closeBtn" onclick="closeNav()">
+                <a href="index.html">Home</a>
+                <div></div>
+                <a href="course.html">Course</a>
+                <div></div>
+                <a href="aboutus.html">About Us</a>
+                <div></div>
+                <div class="hamburgerLogin">
+                    <a href="login.html">Log In</a>
+                </div>
+                <p>EduNine - Group 9</p>
+                <h5>RevoU - Balikpapan Section</h5>
+            </div>
+        </header>
+    </nav>
+
+    <!-- Introduction Course -->
+
+    <section class="informationCourse" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500"></section>
+
+    <!-- Benefit & Instructor-->
+
+    <main data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+        <div class="materialCourse">
+            <p>Lesson Material</p>
+            <h1>Materi Yang Akan Diajarkan</h1>
+        </div>
+        <div class="instructorProfile">
+            <p>Belajar dari Expert</p>
+            <div class="instructor">
+                <img src="img/dataanalyst1.png" alt="Avatar">
+                <div class="dataProfile">
+                    <h3>Joseph Leon</h3>
+                    <p>Front End Developer at Google</p>
+                </div>
+            </div>
+            <div class="instructor">
+                <img src="img/dataanalyst2.png" alt="Avatar">
+                <div class="dataProfile">
+                    <h3>Vincent Ford</h3>
+                    <p>Front End Engineer at Bukalapak</p>
+                </div>
+            </div>
+            <div class="instructor">
+                <img src="img/dataanalyst3.png" alt="Avatar">
+                <div class="dataProfile">
+                    <h3>Griffin Ryder</h3>
+                    <p>Front End Developer at OVO</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Point Benefit -->
+
+    <section class="benefitCourse" data-aos="flip-down">
+        <div class="benefit">
+            <img src="img/benefit1.png" alt="Icon">
+            <p>Learn from expertize</p>
+        </div>
+        <div class="benefit">
+            <img src="img/benefit2.png" alt="Icon">
+            <p>Real study case</p>
+        </div>
+        <div class="benefit">
+            <img src="img/benefit3.png" alt="Icon">
+            <p>Free career class</p>
+        </div>
+        <div class="benefit">
+            <img src="img/benefit4.png" alt="Icon">
+            <p>Get your certificates</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer data-aos="flip-up">
+        <div class="sectionFooter firstChild">
+            <img src="img/logo.png" alt="Logo">
+            <h3>PT. Group 9 Balikpapan</h3>
+            <h4>RevoU Capstone Project</h4>
+            <div class="tim">
+                <h4>By Hanna, Karina, Pras, Ahyar, <br>
+                    Febrianti, David, Hawwin</h4>
+            </div>
+            <h5>RevoU X MSIB Batch 5</h5>
+        </div>
+        <div class="sectionFooter">
+            <h3>Start Your Career</h3>
+            <a href="courseuiux.html">UI/UX Designer</a>
+            <a href="coursefe.html">Front End Developer</p>
+            <a href="coursebe.html">Back End Developer</a>
+            <a href="courseda.html">Data Analyst</a>
+        </div>
+        <div class="sectionFooter lastChild">
+            <h3>Company</h3>
+            <a href="aboutus.html">About Us</a>
+        </div>
+    </footer>
+
+
+
+    <!-- Javascript -->
+    <script src="JS/index.js"></script>
+    <script src="JS/materiDA.js"></script>
+
+    <!-- Javascript AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>

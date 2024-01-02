@@ -37,3 +37,39 @@ function popupOpenForm() {
 function popupCloseForm() {
   document.getElementById("addForm").style.display = "none";
 }
+
+
+
+// READ - GET Method
+const tBody = document.querySelector('.profileInformation');
+
+fetch('https://65938d5d1493b0116068af1a.mockapi.io/testimoni')
+.then(response => response.json())
+.then(data => {
+    
+    const Data = data;
+    for (let i = 0; i < Data.length; i++) {
+        const testimonials = document.createElement('div');
+        testimonials.setAttribute('class', 'testimonials');
+        tBody.appendChild(testimonials);
+        const userData = document.getElementsByClassName('testimonials');
+        userData[i].innerHTML = `
+          <div class="alumniProfile">
+            <img src="${Data[i].foto}" alt="Avatar">
+            <div class="alumniProfile-title">
+                <h3>${Data[i].nama}</h3>
+                <p>Freelance</p>
+            </div>
+          </div>
+          <div class="alumniExperience">
+            <p>
+              ${Data[i].testimoni}
+            </p>
+          </div>
+        `
+    };
+})
+.catch(error => {
+    console.error('Error:', error);
+})
+

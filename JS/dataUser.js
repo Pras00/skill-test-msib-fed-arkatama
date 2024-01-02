@@ -32,26 +32,31 @@ cancelEdit.addEventListener('click', popupCloseEdit);
 // POST - CREATE Method
 const username = document.getElementById('Username');
 const email = document.getElementById('Email');
-const password = document.getElementById('Password');
+const instansi = document.getElementById('Instansi');
+const testimoni = document.getElementById('Testimoni');
+const foto = document.getElementById('Foto');
 const submitForm = document.querySelector('.sendForm');
 
 submitForm.addEventListener('click', popupCloseForm);
 
 submitForm.addEventListener('click', () => {
     // Validasi formulir
-    if (!username.checkValidity() || !email.checkValidity() || !password.checkValidity()){
+    if (!username.checkValidity() || !email.checkValidity() || !instansi.checkValidity() || !testimoni.checkValidity() || !foto.checkValidity()){
         // Validasi gagal, tampilkan pesan atau lakukan sesuatu
         alert('Silakan isi semua field dengan benar.');
         return; // Hentikan proses submit formulir
     }
     
     const data = {
-        username: username.value,
+        nama: username.value,
         email: email.value,
-        password: password.value
+        asal_instansi: instansi.value,
+        testimoni: testimoni.value,
+        foto: foto.value,
     }
 
-    fetch('https://be-edunine-production.up.railway.app/user', {
+
+    fetch('https://65938d5d1493b0116068af1a.mockapi.io/testimoni', {
         method: 'POST',
         headers: {
         'Content-Type': 'application/json'
@@ -73,11 +78,11 @@ submitForm.addEventListener('click', () => {
 // READ - GET Method
 const tBody = document.querySelector('.userTable');
 
-fetch('https://be-edunine-production.up.railway.app/user')
-.then(response => response.json())
+fetch('https://65938d5d1493b0116068af1a.mockapi.io/testimoni')
+.then(response => response.json()) 
 .then(data => {
     
-    const Data = data.data;
+    const Data = data;
     for (let i = 0; i < Data.length; i++) {
         const tableRow = document.createElement('tr');
         tableRow.setAttribute('class', 'userData');
@@ -85,9 +90,9 @@ fetch('https://be-edunine-production.up.railway.app/user')
         const userData = document.getElementsByClassName('userData');
         userData[i].innerHTML = `
             <td>${[i + 1]}</td>
-            <td>${Data[i].username}</td>
+            <td>${Data[i].nama}</td>
             <td>${Data[i].email}</td>
-            <td>${Data[i].password}</td>
+            <td>${Data[i].testimoni}</td>
             <td>
                 <div class="table-btn">
                     <button data-id="${Data[i].id}" class="fa fa-pen edit"></button>
@@ -119,26 +124,30 @@ function updateButton() {
             // Element Data
             const username = document.getElementById('editUsername');
             const email = document.getElementById('editEmail');
-            const password = document.getElementById('editPassword');
+            const instansi = document.getElementById('editInstansi');
+            const testimoni = document.getElementById('editTestimoni');
+            const foto = document.getElementById('editFoto');
             const submitForm = document.querySelector('.sendEdit');
 
             submitForm.addEventListener('click', popupCloseEdit);
 
             submitForm.addEventListener('click', function() {
                 const data = {
-                    username: username.value,
+                    nama: username.value,
                     email: email.value,
-                    password: password.value
+                    asal_instansi: instansi.value,
+                    testimoni: testimoni.value,
+                    foto: foto.value,
                 }
 
                 // Validasi formulir
-                if (!username.checkValidity() || !email.checkValidity() || !password.checkValidity()){
+                if (!username.checkValidity() || !email.checkValidity() || !instansi.checkValidity() || !testimoni.checkValidity() || !foto.checkValidity()){
                     // Validasi gagal, tampilkan pesan atau lakukan sesuatu
                     alert('Silakan isi semua field dengan benar.');
                     return; // Hentikan proses submit formulir
                 }
             
-                fetch(`https://be-edunine-production.up.railway.app/user/${dataId}`, {
+                fetch(`https://65938d5d1493b0116068af1a.mockapi.io/testimoni/${dataId}`, {
                     method: 'PATCH',
                     headers: {
                     'Content-Type': 'application/json'
@@ -168,7 +177,7 @@ function deleteButton() {
             // GET ID 
             const dataId = this.getAttribute('data-id');
 
-            fetch(`https://be-edunine-production.up.railway.app/user/${dataId}`, {
+            fetch(`https://65938d5d1493b0116068af1a.mockapi.io/testimoni/${dataId}`, {
                 method: 'DELETE'
             })
             .then(response => response.json())

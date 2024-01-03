@@ -378,6 +378,7 @@ header {
 
 .alumniProfile img {
     width: 13%;
+    border-radius: 100%;
 }
 
 .alumniProfile-title {
@@ -476,7 +477,7 @@ footer {
     align-items: center;
     position: sticky;
     bottom: 4%;
-    z-index: 3;
+    z-index: 10;
     margin-left:84%;
     margin-right: 4%;
     padding: 10px;

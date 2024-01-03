@@ -148,7 +148,7 @@ function updateButton() {
                 }
             
                 fetch(`https://65938d5d1493b0116068af1a.mockapi.io/testimoni/${dataId}`, {
-                    method: 'PATCH',
+                    method: 'PUT',
                     headers: {
                     'Content-Type': 'application/json'
                     },
